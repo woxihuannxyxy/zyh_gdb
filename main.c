@@ -2,14 +2,14 @@
 
 void faulty_function(int *arr, int size) {
     int i = 0;
-    for (i; i < size; i++) { // 数组越界错误：循环条件应为 i < size
+    for (i; i <= size; i++) { // 数组越界错误：循环条件应为 i < size
         arr[i] = (i+1) * (i+1) ;    
     }
 }
 
 int main() {
     int arr[3];
-    int index=3;
+    int index;
     faulty_function(arr, 3);
     
     // 打印数组
