@@ -2,7 +2,7 @@
 
 void faulty_function(int *arr, int size) {
     int i = 0;
-    for (i; i < size; i++) { // 错误：循环条件应为 i < size
+    for (i; i <= size; i++) { // 错误：循环条件应为 i < size
         arr[i] = (i+1) * (i+1) ;    
     }
 }
