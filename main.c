@@ -9,7 +9,7 @@ void faulty_function(int *arr, int size) {
 
 int main() {
     int arr[3];
-    int index;
+    int index=3;
     faulty_function(arr, 3);
     
     // 打印数组
